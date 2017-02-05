@@ -70,7 +70,7 @@ def crawler_emojis(version):
     
     data_file_name = version+'_data.json'
     with open(data_file_name, 'w') as outfile:
-        json.dump(_json_list, outfile)
+        json.dump(_json_list, outfile, indent=4, sort_keys=True)
 
     print "Done version "+version+"\n"
 
